@@ -1,0 +1,5 @@
+platform :ios, '7.0' 
+
+target 'LogisticsTracking' do
+  pod 'RegexKitLite', '~> 4.0'
+end
