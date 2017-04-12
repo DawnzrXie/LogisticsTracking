@@ -33,6 +33,12 @@
 
 - (CGFloat )refreshWithData:(XLogisticsData *)data andIsGreen:(BOOL)isGreen{
     
+    //删除复用的
+    for (id obj in self.contentView.subviews) {
+        
+        [obj removeFromSuperview];
+    }
+    
     //Content
     _textView = [[XStatusTextView alloc] initWithFrame:CGRectMake(SCALE750(150), SCALE750(64), SCALE750(460), SCALE750(30))];
     XStatus *status = [[XStatus alloc]init];

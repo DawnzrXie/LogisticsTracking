@@ -10,6 +10,9 @@
 #import "XSpecial.h"
 #import "XFrame.h"
 
+@interface XStatusTextView ()
+
+@end
 @implementation XStatusTextView
 
 - (id)initWithFrame:(CGRect)frame
